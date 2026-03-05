@@ -26,13 +26,13 @@ services:
       POSTGRES_USER: useruser
       POSTGRES_PASSWORD: userpass
     ports:
-      - "5432:5432"
+      - "5433:5432"
     volumes:
       - postgres-user-data:/var/lib/postgresql/data
     networks:
       - orangchat-network
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U userhuser -d user_db"]
+      test: ["CMD-SHELL", "pg_isready -U useruser -d user_db"]
       interval: 10s
       timeout: 5s
       retries: 5
@@ -45,7 +45,7 @@ services:
       POSTGRES_USER: messageuser
       POSTGRES_PASSWORD: messagepass
     ports:
-      - "5432:5432"
+      - "5434:5432"
     volumes:
       - postgres-message-data:/var/lib/postgresql/data
     networks:

@@ -1,4 +1,4 @@
-package com.sharedlibrary.dto;
+package com.orang.sharedlibrary.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
