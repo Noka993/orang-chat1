@@ -1,4 +1,4 @@
-package com.sharedlibrary.constants;
+package com.orang.sharedlibrary.constants;
 
 public class RabbitMQConstants {
     public static final String MESSAGE_EXCHANGE = "message.exchange";
