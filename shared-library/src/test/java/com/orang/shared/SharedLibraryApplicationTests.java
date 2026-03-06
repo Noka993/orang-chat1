@@ -1,4 +1,4 @@
-package com.orang.sharedlibrary;
+package com.orang.shared;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
