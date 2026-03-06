@@ -17,3 +17,8 @@
 - Auth Service only handles email + password
 - User Service creates profile via RabbitMQ event on registration
 - Demonstrate event-driven microservice communication
+
+## 2. Contact-Profile Relation
+- **Current:** UUID reference, manual lookup
+- **Improvement:** Add @ManyToOne relation
+- **Benefit:** Simpler code, JPA handles joins
